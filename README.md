@@ -4,12 +4,13 @@
  Runs on an RPI 3
  # How to use:
   Install FLTK Libs:
-  
-  sudo apt install fltk1.3-dev
+   
+   sudo apt install fltk1.3-dev
   
  Clone the repository
  
  Compile with: 
-  g++ test2_vpt_2_8.cpp -lfltk -li2c -o <Name of the executable>
+   
+   g++ test2_vpt_2_8.cpp -lfltk -li2c -o 'Name of the executable'
  
  
