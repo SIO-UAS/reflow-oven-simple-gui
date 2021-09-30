@@ -10,6 +10,6 @@
  Clone the repository
  
  Compile with: 
-  g++ test2_vpt_2_8.cpp -lfltk -li2c -o <<Name of the executable>>
+  g++ test2_vpt_2_8.cpp -lfltk -li2c -o <Name of the executable>
  
  
