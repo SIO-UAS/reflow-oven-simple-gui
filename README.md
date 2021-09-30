@@ -14,4 +14,9 @@
    ```bash
    g++ test2_vpt_2_8.cpp -lfltk -li2c -o 'Name of the executable'
    ```
- 
+ # To Do's
+- [ ] Format Code
+- [ ] Test Code if the 'control loop' works 
+- [ ] Work on the GUI
+- [ ] Make a Object Orientet version
+
