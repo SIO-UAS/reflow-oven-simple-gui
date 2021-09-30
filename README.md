@@ -15,6 +15,9 @@
    g++ test2_vpt_2_8.cpp -lfltk -li2c -o 'Name of the executable'
    ```
  # To Do's
+- [x] Control Relay with the IO-Board
+- [x] Read the Sensor
+- [ ] Read the Sensor right (full 10bit)
 - [ ] Format Code
 - [ ] Test Code if the 'control loop' works 
 - [ ] Work on the GUI
