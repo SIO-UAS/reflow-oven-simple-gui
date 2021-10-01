@@ -19,7 +19,7 @@
 - [x] Read the Sensor
 - [ ] Read the Sensor right (full 10bit)
 - [ ] Format Code
-- [ ] Test Code if the 'control loop' works 
+- [x] Test Code if the 'control loop' works (Tough you must ajust turnofft and waittime to your setup before compiling)
 - [ ] Work on the GUI
 - [ ] Make a Object Orientet version
 
