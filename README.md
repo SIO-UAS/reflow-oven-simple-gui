@@ -22,4 +22,5 @@
 - [x] Test Code if the 'control loop' works (Tough you must ajust turnofft and waittime to your setup before compiling)
 - [ ] Work on the GUI
 - [ ] Make a Object Orientet version
+- [ ] Make a beeter control loop
 
