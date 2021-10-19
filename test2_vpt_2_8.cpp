@@ -100,15 +100,25 @@ void coilone_butcb(Fl_Widget* o, void*){
 }
 
 void i2creadword(){
-	char buf[2];
-	if (read(i2cfile, buf, 2) != 2) {
+	char buf[1];
+  char ws[2];
+  buf[0] = 0x14; //= 20 => MSB read
+  write(i2cfile, buf, 1);
+	if (read(i2cfile, buf, 1) != 1) {
 	  /* ERROR HANDLING: i2c transaction failed */
 	 i2crerr = true;
 	} else {
+    ws[0] = buf[0];
+    buf[0] = 0x15; //=21 => LSB read
+    if (read(i2cfile, buf, 1) != 1) {
+  	  /* ERROR HANDLING: i2c transaction failed */
+  	 i2crerr = true;
+  	} else {
+      ws[1] = buf[0];
 
-
- 	 i2cwordres = ((int)buf[0]<<2) + ((int)buf[1]>>6);
-	i2crerr =false;
+ 	    i2cwordres = ((int)ws[0]<<2) + ((int)ws[1]>>6);
+	    i2crerr =false;
+    }
 	}
 	//printf("%X", i2cwordres);
 	//Something is wrong with the reading idk if it is the PIC or the Pi have to figure out later f*** the two LSBs in the meantime should leave an inacuracy of 1.2°C
